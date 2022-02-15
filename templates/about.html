@@ -1,0 +1,31 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static', filename='img/about-bg.jpg')}})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">This is who I am.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>I am Santiago Gutierrez. I am a student, an employee, and a developer. I attend Hallmark University, a local private school in my hometown of San Antonio, Texas. I am pursuing a Bachelors of Science in Information Systems. I am employed at Oak Hills Church as a Help Desk Technician where I get to help other people and grow my skill set. When not at work or at school, I am most often keeping myself busy by not only creating software, but learning about it too. I have used a wide range of tools such as Python, JavaScript, Swift, HTML, CSS, and several frameworks.</p>
+        <p>While going to school and working, I realized that I knew much more about networking, cybersecurity, scripting, and even communicating with others than just a couple of months prior. I decided to pursue several certifications and can now happily say that I am CompTIA A+, Network+, and Security+ certified. And I am in the process of obtaining my CCNA and AWS Cloud Practitioner certifications. I have also taken the time to become a member of ISSA (Information Systems Security Association), an organization made up of some of the most intelligent cybersecurity experts and IT specialists.</p>
+        <p>My passion lies in software development. I find it fascinating uncovering the power of computing and how I can use code to wield that power. I have loved every moment of my journey that started in the fourth grade when I was programming Lego robots, to high school where I was programming Arduino microcontrollers, to now where I am developing more complicated web applications and projects that have practical uses. I dream to be able to use everything I have learned (and haven't learned) in a career as a software engineer.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}
