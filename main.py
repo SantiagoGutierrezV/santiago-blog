@@ -205,6 +205,7 @@ def send_email(name, email, phone, message):
         connection.login(OWN_EMAIL, OWN_PASSWORD)
         connection.sendmail(OWN_EMAIL, OWN_PASSWORD, email_message)
 
+
 @app.route("/new-post", methods=["GET", "POST"])
 @admin_only
 def add_new_post():
