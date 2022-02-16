@@ -13,15 +13,16 @@ from flask_gravatar import Gravatar
 from functools import wraps
 import smtplib
 
-# OWN_EMAIL = os.environ.get("OWN_EMAIL")
-OWN_EMAIL = "robomail.aka.kevin@gmail.com"
-# OWN_PASSWORD = os.environ.get("OWN_PASSWORD")
-OWN_PASSWORD = "MaXQuintussence326!"
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 ckeditor = CKEditor(app)
 Bootstrap(app)
+
+# OWN_EMAIL = os.environ.get("OWN_EMAIL")
+OWN_EMAIL = "robomail.aka.kevin@gmail.com"
+# OWN_PASSWORD = os.environ.get("OWN_PASSWORD")
+OWN_PASSWORD = "MaXQuintussence326!"
 
 # CONNECT TO DB
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', "sqlite:///blog.db")
