@@ -7,13 +7,13 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            {% if msg_sent: %}
-            <h1>Successfully sent your message!</h1>
-            <span class="subheading">I'll get back to you as soon as I can! Feel free to shoot me another one.</span>
-            {% else: %}
+<!--            {% if msg_sent: %}-->
+<!--            <h1>Successfully sent your message!</h1>-->
+<!--            <span class="subheading">I'll get back to you as soon as I can! Feel free to shoot me another one.</span>-->
+<!--            {% else: %}-->
             <h1>Contact Me</h1>
             <span class="subheading">Have questions? I have answers.</span>
-            {% endif %}
+<!--            {% endif %}-->
           </div>
         </div>
       </div>
@@ -28,7 +28,8 @@
         <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
         <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
         <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-        <form action="{{ url_for(receive_data) }}" method="post" name="sentMessage" id="contactForm" novalidate>
+<!--        action="{{ url_for(receive_data) }}"-->
+        <form method="post" name="sentMessage" id="contactForm" novalidate>
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Name</label>
