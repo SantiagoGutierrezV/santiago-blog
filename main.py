@@ -196,7 +196,7 @@ def about():
 def receive_data():
     if request.method == "POST":
         data = request.form
-        send_email(data['name'], data['email'], data['number'], data['message'])
+        send_email(data['name'], data['email'], data['phone'], data['message'])
         return render_template("contact.html", msg_sent=True, current_user=current_user)
     return render_template("contact.html", msg_sent=False, current_user=current_user)
 
